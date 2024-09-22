@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            height: 100vh;
+        }
+      #header {
+        background-color: rgb(83, 65, 91);
+        height: 150px;
+        border: 2px solid black;
+      }
+      #store {
+        background-color: rgb(75, 58, 84);
+        color: #fff;
+        text-align: center;
+        font-size: 27px;
+        height: 27px;
+        width: 220px;
+        margin-left: 50%;
+      }
+      #MS {
+        margin-left: 50.5%;
+      }
+      .menu {
+        margin-top: 10px;
+        margin-left: 600px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #e8ef18;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+      }
+      .menu a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid indianred;
+        transition: 0.4s linear;
+      }
+      .menu a:hover:before {
+        width: 90%;
+      }
+      #lside {
+        background-color: rgb(63, 66, 106);
+        width: 200px;
+        height: 78.8vh;
+      }
+      #branch {
+        padding-top: 30px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        align-items: center;
+      }
+      ul li {
+        margin-top: 10px;
+        font-size: large;
+        font-weight: 800;
+      }
+      #submain {
+        margin-top: 0px;
+        padding: 0px;
+        display: flex;
+        height: 78.8vh;
+      }
+      
+      #rside{
+        width: 100%;
+        float: right;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div style="display: flex; align-items: center; justify-content: space-between;" >
+        <img src="./download2.jpeg" alt="" height="100px" style="border-radius: 50%;" />
+        <div style="width: 500px;">
+          <div id="store">Online Book Store</div>
+          <em id="MS">Created & Maintained By MS</em>
+        </div>
+        <img src="./image1.jpeg" alt="" height="100px"  style="border-radius: 50%;"/>
+    </div>
+        <div class="menu">
+          <a href="./index.html">HOME</a>
+          <a href="./login.html">LOGIN</a>
+          <a href="./register.html">REGISTER</a>
+          <a href="./catalogue.html">CATALOGUE</a>
+        </div>
+      </div>
+      <div id="submain">
+        <div id="lside">
+          <ul class="branch">
+            <li>IT</li>
+            <li>CSE</li>
+            <li>AI&ML</li>
+            <li>MECH</li>
+            <li>ECE</li>
+            <li>AG</li>
+            <li>MBA</li>
+          </ul>
+        </div>
+        <div id="rside">
+            <img src="cover1.jpeg" alt="" width="100%"  height="100%">
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
